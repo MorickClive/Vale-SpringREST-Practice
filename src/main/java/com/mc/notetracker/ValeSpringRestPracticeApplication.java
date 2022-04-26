@@ -10,9 +10,7 @@ public class ValeSpringRestPracticeApplication {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(ValeSpringRestPracticeApplication.class, args);
 		
-		context.getBean("helloWorld", String.class);
-		
-		System.out.format("Result: %s\n", context.getBean("helloWorld", String.class));
+		System.out.format("Result: %s\n", context.getBean("getSysTime", String.class));
 	}
 
 }
