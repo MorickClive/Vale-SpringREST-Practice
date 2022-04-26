@@ -33,4 +33,4 @@ Utility libraries/features:
 
 ---
 
-## [Project Vale: Overview](https://github.com/MorickClive/Project- [ ]Vale/blob/main/README.md#project- [ ]vale)
+## [Project Vale: Overview](https://github.com/MorickClive/Project-Vale/blob/main/README.md#project-vale)
