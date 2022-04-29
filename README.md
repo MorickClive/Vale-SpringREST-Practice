@@ -10,26 +10,43 @@ To review the network graph of commits, please review [here](https://github.com/
 Objectives:
 - [X] Custom/Config Beans
 
-- [ ] Person:
-  - [ ] Entities
-  - [ ] Services
-  - [ ] Repositories
+- [X] Person:
+  - [X] Entities
+  - [X] Services
+  - [X] Repositories
+  
+  - [X] CRUD
+	  - [X] Create
+	  - [X] Read
+	  - [X] Update
+	  - [X] Delete
 
 - [ ] Notes:
   - [ ] Entities
   - [ ] Services
   - [ ] Repositories
-
+  
+  - [ ] CRUD
+	  - [ ] Create
+	  - [ ] Read
+	  - [ ] Update
+	  - [ ] Delete
+	  
 - [ ] NoteGroup:
   - [ ] Entities
   - [ ] Services
   - [ ] Repositories
-
+  
+  - [ ] CRUD
+	  - [ ] Create
+	  - [ ] Read
+	  - [ ] Update
+	  - [ ] Delete
 
 Utility libraries/features:
 - [X] Lombok (Constructor/Accessors/Utility method generation)
-- [ ] Swagger (View: generated API )
-- [ ] ModelMapper
+- [X] Swagger (View: generated API )
+- [X] ModelMapper
 
 ---
 
