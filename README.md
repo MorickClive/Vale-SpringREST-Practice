@@ -21,16 +21,16 @@ Objectives:
 	  - [X] Update
 	  - [X] Delete
 
-- [ ] Notes:
-  - [ ] Entities
-  - [ ] Services
-  - [ ] Repositories
+- [X] Notes:
+  - [X] Entities
+  - [X] Services
+  - [X] Repositories
   
-  - [ ] CRUD
-	  - [ ] Create
-	  - [ ] Read
-	  - [ ] Update
-	  - [ ] Delete
+  - [X] CRUD
+	  - [X] Create
+	  - [X] Read
+	  - [X] Update
+	  - [X] Delete
 	  
 - [ ] NoteGroup:
   - [ ] Entities
