@@ -11,6 +11,6 @@ public interface CRUDOptions<T, DTO> {
 	Optional<DTO> read(Integer id);
 	List<DTO> readAll();
 	Optional<DTO> update(Integer id, T model);
-	Optional<PersonDTO> delete(Integer id);
+	Optional<DTO> delete(Integer id);
 
 }
