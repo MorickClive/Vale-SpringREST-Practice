@@ -11,47 +11,47 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mc.notetracker.persistence.domain.Note;
-import com.mc.notetracker.persistence.dto.NoteDTO;
-import com.mc.notetracker.services.NoteService;
+import com.mc.notetracker.persistence.domain.NoteGroup;
+import com.mc.notetracker.persistence.dto.NoteGroupDTO;
+import com.mc.notetracker.services.NoteGroupService;
 
 import lombok.NoArgsConstructor;
 
 @RestController
-@RequestMapping(path = "/notetracker/note")
+@RequestMapping(path = "/notetracker/notegroup")
 @NoArgsConstructor
-public class NoteController {
+public class NoteGroupController {
 	
-	private NoteService service;
+	private NoteGroupService service;
 	
 	@Autowired
-	public NoteController(NoteService service) {
+	public NoteGroupController(NoteGroupService service) {
 		super();
 		this.service = service;
 	}
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
-	public ResponseEntity<NoteDTO>  create(@RequestBody Note model) {
+	public ResponseEntity<NoteGroupDTO>  create(@RequestBody NoteGroup model) {
 		return ResponseEntity.ok(service.create(model));
 	}
 
 	@RequestMapping(value = "/read", method = RequestMethod.GET)
-	public ResponseEntity<NoteDTO> read(@PathParam(value = "id") Integer id) {
+	public ResponseEntity<NoteGroupDTO> read(@PathParam(value = "id") Integer id) {
 		return ResponseEntity.of(service.read(id));
 	}
 
 	@RequestMapping(value = "/readall", method = RequestMethod.GET)
-	public ResponseEntity<List<NoteDTO>> readAll() {
+	public ResponseEntity<List<NoteGroupDTO>> readAll() {
 		return ResponseEntity.ok(service.readAll());		
 	}
 
 	@RequestMapping(value = "/update", method = RequestMethod.PUT)
-	public ResponseEntity<NoteDTO> update(@PathParam(value = "id") Integer id, @RequestBody Note model) {
+	public ResponseEntity<NoteGroupDTO> update(@PathParam(value = "id") Integer id, @RequestBody NoteGroup model) {
 		return ResponseEntity.of(service.update(id, model));
 	}
 
 	@RequestMapping(value = "/delete", method = RequestMethod.DELETE)
-	public ResponseEntity<NoteDTO> delete(@PathParam(value = "id") Integer id) {
+	public ResponseEntity<NoteGroupDTO> delete(@PathParam(value = "id") Integer id) {
 		return ResponseEntity.of(service.delete(id));
 	}
 
