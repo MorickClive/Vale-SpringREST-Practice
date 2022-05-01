@@ -1,5 +1,9 @@
 package com.mc.notetracker.persistence.dto;
 
+import java.util.List;
+
+import com.mc.notetracker.persistence.domain.Note;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,8 +11,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class NoteDTO {
+public class NoteGroupDTO {
 	private Integer id;
-	private String header;
-	private String contents;
+	private String label;
+	private List<NoteDTO> noteList;
 }
