@@ -14,34 +14,19 @@ Objectives:
   - [X] Entities
   - [X] Services
   - [X] Repositories
-  
   - [X] CRUD
-	  - [X] Create
-	  - [X] Read
-	  - [X] Update
-	  - [X] Delete
 
 - [X] Notes:
   - [X] Entities
   - [X] Services
   - [X] Repositories
-  
   - [X] CRUD
-	  - [X] Create
-	  - [X] Read
-	  - [X] Update
-	  - [X] Delete
 	  
-- [ ] NoteGroup:
-  - [ ] Entities
-  - [ ] Services
-  - [ ] Repositories
-  
-  - [ ] CRUD
-	  - [ ] Create
-	  - [ ] Read
-	  - [ ] Update
-	  - [ ] Delete
+- [X] NoteGroup:
+  - [X] Entities
+  - [X] Services
+  - [X] Repositories
+  - [X] CRUD
 
 Utility libraries/features:
 - [X] Lombok (Constructor/Accessors/Utility method generation)

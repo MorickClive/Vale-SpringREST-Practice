@@ -32,8 +32,8 @@ public class PersonController {
 	}
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
-	public ResponseEntity<PersonDTO>  create(@RequestBody Person person) {
-		return ResponseEntity.ok(service.create(person));
+	public ResponseEntity<PersonDTO>  create(@RequestBody Person model) {
+		return ResponseEntity.ok(service.create(model));
 	}
 
 	@RequestMapping(value = "/read", method = RequestMethod.GET)
@@ -47,8 +47,8 @@ public class PersonController {
 	}
 
 	@RequestMapping(value = "/update", method = RequestMethod.PUT)
-	public ResponseEntity<PersonDTO> update(@PathParam(value = "id") Integer id, @RequestBody Person person) {
-		return ResponseEntity.of(service.update(id, person));
+	public ResponseEntity<PersonDTO> update(@PathParam(value = "id") Integer id, @RequestBody Person model) {
+		return ResponseEntity.of(service.update(id, model));
 	}
 
 	@RequestMapping(value = "/delete", method = RequestMethod.DELETE)

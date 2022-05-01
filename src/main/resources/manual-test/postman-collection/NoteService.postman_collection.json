@@ -1,0 +1,497 @@
+{
+	"info": {
+		"_postman_id": "816d284d-71f7-4a90-a08c-9be213954349",
+		"name": "NoteService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Portal",
+			"item": [
+				{
+					"name": "Greet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/greet",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"greet"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Person",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"forename\":\"Morick\",\r\n    \"surname\":\"Clive\",\r\n    \"age\":34\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/notetracker/person/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"person",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read ID 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/notetracker/person/read?id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"person",
+								"read"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/notetracker/person/readall",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"person",
+								"readall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"surname\":\"Jeff\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/notetracker/person/update?id=2",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"person",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/notetracker/person/delete?id=3",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"person",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NoteGroup",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"label\":\"NEW TEST NOTE\",\r\n    \"noteList\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/notetracker/note/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"note",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read ID 1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/notetracker/notegroup/read",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"notegroup",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/notetracker/notegroup/readall",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"notegroup",
+								"readall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"header\":\"NEW UPDATED NOTE\",\r\n    \"fkId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/notetracker/notegroup/update?id=2",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"notegroup",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/notetracker/notegroup/delete?id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"notegroup",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Note",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"header\":\"NEW TEST NOTE\",\r\n    \"fkId\": 1,\r\n    \"contents\":\"A new message as part of a note model.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/notetracker/note/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"note",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read ID 1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/notetracker/note/read",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"note",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/notetracker/note/readall",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"note",
+								"readall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"header\":\"NEW UPDATED NOTE\",\r\n    \"fkId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/notetracker/note/update?id=2",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"note",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/notetracker/note/delete?id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"notetracker",
+								"note",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
